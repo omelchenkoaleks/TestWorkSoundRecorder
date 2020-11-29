@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sound Recorder</string>
+    <string name="recording_is_in_progress">Recording is in progress</string>
+    <string name="recordings_list">Recordings list</string>
+</resources>
