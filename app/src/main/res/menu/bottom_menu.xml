@@ -5,7 +5,7 @@
         android:icon="@drawable/ic_mic_white"
         android:title="@string/recording_is_in_progress"/>
     <item
-        android:id="@+id/listRecordFragment"
+        android:id="@+id/listRecordsFragment"
         android:icon="@drawable/ic_playlist_play_white"
         android:title="@string/recordings_list"/>
 </menu>

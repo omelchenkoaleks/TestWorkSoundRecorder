@@ -7,7 +7,12 @@
 
     <fragment
         android:id="@+id/recordFragment"
-        android:name="com.omelchenkoaleks.soundrecorder.fragments.RecordFragment"
+        android:name="com.omelchenkoaleks.soundrecorder.record.RecordFragment"
         android:label="fragment_record"
         tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/listRecordsFragment"
+        android:name="com.omelchenkoaleks.soundrecorder.list_records.ListRecordsFragment"
+        android:label="fragment_list_records"
+        tools:layout="@layout/fragment_list_records" />
 </navigation>

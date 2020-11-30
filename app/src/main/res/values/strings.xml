@@ -2,4 +2,9 @@
     <string name="app_name">Sound Recorder</string>
     <string name="recording_is_in_progress">Recording is in progress</string>
     <string name="recordings_list">Recordings list</string>
+    <string name="pause">Pause</string>
+    <string name="record_prompt">Tap the button to start recording</string>
+    <string name="recording_play">Recording play</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

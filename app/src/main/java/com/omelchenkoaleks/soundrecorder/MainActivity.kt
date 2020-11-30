@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
 import com.omelchenkoaleks.soundrecorder.databinding.ActivityMainBinding
 import com.omelchenkoaleks.soundrecorder.utils.APP_ACTIVITY
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         setSupportActionBar(mToolbar)
         title = getString(R.string.app_name)
+
+        NavigationUI.setupWithNavController(bottom_navigation, navController)
     }
 
     override fun onDestroy() {
