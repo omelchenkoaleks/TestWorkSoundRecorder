@@ -21,4 +21,9 @@ class ListRecordsFragment : Fragment() {
         return mBinding.root
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
+
 }
