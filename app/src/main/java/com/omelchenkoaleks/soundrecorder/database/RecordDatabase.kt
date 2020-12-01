@@ -1,28 +1,28 @@
-package com.omelchenkoaleks.soundrecorder.room
+package com.omelchenkoaleks.soundrecorder.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Recording::class], version = 1, exportSchema = false)
-abstract class Database : RoomDatabase() {
+@Database(entities = [RecordingItem::class], version = 1, exportSchema = false)
+abstract class RecordDatabase: RoomDatabase() {
 
-    abstract val dao: Dao
+    abstract val recordDatabaseDao: RecordDatabaseDao
 
     companion object {
 
         @Volatile
-        private var INSTANCE: com.omelchenkoaleks.soundrecorder.room.Database? = null
+        private var INSTANCE: RecordDatabase? = null
 
-        fun getInstance(context: Context): com.omelchenkoaleks.soundrecorder.room.Database {
+        fun getInstance(context: Context): RecordDatabase {
             synchronized(this) {
                 var instance = INSTANCE
 
                 if (instance == null) {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
-                        com.omelchenkoaleks.soundrecorder.room.Database::class.java,
+                        RecordDatabase::class.java,
                         "record_app_database"
                     )
                         .fallbackToDestructiveMigration()
@@ -35,4 +35,3 @@ abstract class Database : RoomDatabase() {
         }
     }
 }
-

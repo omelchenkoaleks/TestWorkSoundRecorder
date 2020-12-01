@@ -3,9 +3,9 @@
     <item
         android:id="@+id/recordFragment"
         android:icon="@drawable/ic_mic_white"
-        android:title="@string/recording_is_in_progress"/>
+        android:title="Запись"/>
     <item
-        android:id="@+id/listRecordsFragment"
-        android:icon="@drawable/ic_playlist_play_white"
-        android:title="@string/recordings_list"/>
+        android:id="@+id/listRecordFragment"
+        android:icon="@drawable/ic_play_white"
+        android:title="Список"/>
 </menu>
