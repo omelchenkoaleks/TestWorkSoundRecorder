@@ -11,8 +11,8 @@
         android:label="fragment_record"
         tools:layout="@layout/fragment_record" />
     <fragment
-        android:id="@+id/listRecordsFragment"
-        android:name="com.omelchenkoaleks.soundrecorder.listRecord.ListRecordsFragment"
+        android:id="@+id/listRecordFragment"
+        android:name="com.omelchenkoaleks.soundrecorder.listRecord.ListRecordFragment"
         android:label="fragment_list_records"
-        tools:layout="@layout/fragment_list_records" />
+        tools:layout="@layout/fragment_list_record" />
 </navigation>
